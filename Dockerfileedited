@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM ghcr.io/linuxserver/baseimage-alpine:3.21
+FROM ghcr.io/linuxserver/baseimage-alpine:3.24
 
 # set version label
 ARG BUILD_DATE
@@ -11,7 +11,7 @@ LABEL maintainer="kamdzy"
 
 # set environment variables
 ENV XDG_CONFIG_HOME="/config/xdg" \
-  SONARR_CHANNEL="v4-stable" \
+  SONARR_CHANNEL="v5-nightly" \
   SONARR_BRANCH="main" \
   COMPlus_EnableDiagnostics=0 \
   TMPDIR=/run/sonarr-temp
